@@ -8,7 +8,7 @@ permalink: /cv/
 [Download my CV]({{ "/assets/CV.pdf" | relative_url }}) in PDF format.
 
 
-**Email:** [netID@cornell.edu](mailto:netID@cornell.edu) | | | **Phone:** +123 456 7890
+**Email:** [ep559@cornell.edu](mailto:ep559@cornell.edu) | | | **Phone:** +443 812 8070
 
 ---
 
@@ -20,11 +20,11 @@ Aspiring engineering student with a strong foundation in.... Passionate about ..
 #### Education
 - **Cornell University**  
   *Bachelor of Science in Mechanical and Aerospace Engineering*  
-  GPA: 3.8/4.0 | Graduation: Month, Year
+  GPA: 3.9/4.0 | Graduation: December, 2027
 
-- **[High School Name]**  
+- **[Mount Saint Joseph High School]**  
   *High School Diploma*  
-  Graduation: [Month, Year]
+  Graduation: [June, 2020]
 
 ---
 
