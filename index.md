@@ -6,7 +6,7 @@ title: <Eli Pate>
 ## About Me
 
 
-![Profile Picture]({{ "assets/images/Elijah-Pate.jpg" | relative_url }}){: class="profile-image"}
+![Profile Picture]({{ "assets/images/Elijah-Pate.JPG" | relative_url }}){: class="profile-image"}
 
  
 My name is {{ site.name }}, and I like engineering. 
