@@ -8,5 +8,5 @@ image: /assets/images/Hydrophones.png
 
 Designed the hydrophones enclosure for the 2025 Orion AUV. Succesfully mounted enclosure to the AUV frame and passed leak test while minimizing weight. Used FEA to verify structural integrity.
 
-![Shaded rendering of earlier version]({{ "/assets/images/Hydrophones.png" | relative_url }}){: .inline-image-r style="width: 200px"}
+
 
