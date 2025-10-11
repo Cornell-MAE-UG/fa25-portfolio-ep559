@@ -148,11 +148,11 @@ footer {
 }
 
 .gallery-item {
-  overflow: hidden;
+  overflow: visible;
   text-align: center;
   transition: transform 0.3s ease;
-  max-width: 250px; 
-  max-height: 300px; 
+  max-width: 250px;
+  padding-bottom: 15px;
 }
 
 .gallery-item img {
@@ -170,6 +170,10 @@ footer {
   margin: 13px 0;
   font-size: .9rem;
   color: $text-color;
+  word-wrap: break-word;
+  hyphens: auto;
+  line-height: 1.4;
+  padding: 0 5px;
 }
 
 .gallery-item a {
