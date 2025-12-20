@@ -52,7 +52,7 @@ Overall, the scroll compression mechanism used in the ZR34K3E-PFJ shows how mech
 
 We can model the compressor as a steady-flow control volume.
 
-![CV diagram of compressor](/assets/images/cv)
+![CV diagram of compressor](/assets/images/ControlVolume.png)
 
 **Interactions:**
 - **Mass flow:** Refrigerant vapor enters and exits
