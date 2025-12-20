@@ -12,6 +12,8 @@ This portfolio entry analyzes a specific commercial thermodynamic device using m
 
 ---
 ---
+---
+---
 
 ## 1. Device Overview
 
@@ -65,13 +67,10 @@ We can model the compressor as a steady-flow control volume.
 
 For a steady-flow control volume:
 
-$$
-\sum \dot{m}_{in} = \sum \dot{m}_{out}
-$$
+ṁ_in = ṁ_out = ṁ
 
-$$
-\dot{m}_{in} = \dot{m}_{out} = \dot{m}
-$$
+For this compressor:
+ṁ ≈ (8.03 / 3600) × 0.75 × 11 ≈ 0.018 kg/s
 
 The datasheet does not list mass flow rate directly. I have chosen to estimate this value using displacement and suction vapor density.
 
@@ -80,38 +79,25 @@ Using:
 - Volumetric efficiency (typical): 0.75  
 - R-407C suction vapor density (typical): 11 kg/m³  
 
-$$
-\dot{m} \approx \frac{8.03}{3600} \times 0.75 \times 11 \approx 0.018 \ \text{kg/s}
-$$
-
----
-
-## 5. Energy Balance (First Law)
-
 ### General steady-flow energy balance:
 
-\[
-0 = \dot{Q} - \dot{W} + \dot{m}(h_1 - h_2)
-\]
+Energy balance for steady-flow compressor:
+
+0 = Q_dot - W_dot + m_dot * (h1 - h2)
 
 Rearranged for compressor work input:
 
-\[
-\dot{W}_{in} = \dot{m}(h_2 - h_1) + \dot{Q}_{loss}
-\]
+W_dot_in = m_dot * (h2 - h1) + Q_dot_loss
 
 From datasheet:
-\[
-\dot{W}_{in} = 2.58 \ \text{kW}
-\]
+
+W_dot_in = 2.58 kW
 
 Using R-407C property tables under typical A/C conditions:
-- \( h_1 \approx 410 \ \text{kJ/kg} \)
-- \( h_2 \approx 450 \ \text{kJ/kg} \)
+- h1 ≈ 410 kJ/kg
+- h2 ≈ 450 kJ/kg
 
-\[
-\dot{m}(h_2 - h_1) = 0.018 \times (450 - 410) \approx 0.72 \ \text{kW}
-\]
+m_dot * (h2 - h1) = 0.018 * (450 - 410) ≈ 0.72 kW
 
 The remaining input power is lost due to:
 - Motor inefficiency
@@ -120,19 +106,15 @@ The remaining input power is lost due to:
 
 ---
 
-## 6. Entropy Balance (Second Law)
+### Entropy Balance (Second Law)
 
 The steady-state entropy balance is:
 
-\[
-0 = \sum \frac{\dot{Q}}{T} + \dot{m}(s_1 - s_2) + \dot{S}_{gen}
-\]
+0 = sum(Q_dot / T) + m_dot * (s1 - s2) + S_dot_gen
 
 Because compression is irreversible and heat is transferred across a finite temperature difference:
 
-\[
-\dot{S}_{gen} > 0
-\]
+S_dot_gen > 0
 
 Scroll compressors reduce entropy generation by:
 - Maintaining continuous compression
@@ -141,19 +123,15 @@ Scroll compressors reduce entropy generation by:
 
 ---
 
-## 7. Performance Metric
+### Performance Metric
 
 The coefficient of performance is defined as:
 
-\[
-COP = \frac{\dot{Q}_{cooling}}{\dot{W}_{in}}
-\]
+COP = Q_dot_cooling / W_dot_in
 
 Using manufacturer values:
 
-\[
-COP = \frac{7.9}{2.58} \approx 3.05
-\]
+COP = 7.9 / 2.58 ≈ 3.05
 
 This matches the reported datasheet COP, validating the analysis.
 
@@ -166,16 +144,14 @@ This matches the reported datasheet COP, validating the analysis.
 Higher ambient temperature raises condenser pressure, increasing the required pressure ratio across the compressor.
 
 **Thermodynamic consequences:**
-- Increased \( h_2 - h_1 \)
+- Increased h_2 - h_1
 - Increased compressor work
 - Increased entropy generation
 - Reduced COP
 
 If power increases to 3.0 kW while cooling capacity remains constant:
 
-\[
-COP = \frac{7.9}{3.0} \approx 2.63
-\]
+COP = 7.9 / 3.0 ≈ 2.63
 
 This represents a **~14% efficiency reduction**, consistent with real air-conditioning behavior on hot days.
 
