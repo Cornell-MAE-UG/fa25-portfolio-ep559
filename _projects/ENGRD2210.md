@@ -22,6 +22,7 @@ Scroll compressors like the ZR34K3E-PFJ have become the standard choice for resi
 The ZR34K3E-PFJ is designed to operate over the pressure ratios and temperature ranges typical of residential air-conditioning applications and is compatible with refrigerants such as R-407C. Its relatively compact size, low vibration, and good efficiency make it a practical choice for residential systems, which is why scroll compressors have largely replaced reciprocating compressors in modern air-conditioning equipment.
 
 Below are two images/schematics of the compressor:
+---
 ![Compressor schematic 1](/assets/images/Schematic.jpg)
 ![Compressor schematic 2](/assets/images/Schematic2.jpg)
 
