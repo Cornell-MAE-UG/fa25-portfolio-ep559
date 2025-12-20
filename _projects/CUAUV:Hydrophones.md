@@ -11,6 +11,7 @@ image: /assets/images/Compressor.jpg
 This portfolio entry analyzes a specific commercial thermodynamic device using manufacturer performance data and the mass, energy, and entropy balance equations developed in ENGRD 2210 (Thermodynamics) this semester. The goal is to connect thermodynamic theory directly to real engineered hardware.
 
 ---
+---
 
 ## 1. Device Overview
 
@@ -20,7 +21,7 @@ Scroll compressors like the ZR34K3E-PFJ have become the standard choice for resi
 
 The ZR34K3E-PFJ is designed to operate over the pressure ratios and temperature ranges typical of residential air-conditioning applications and is compatible with refrigerants such as R-407C. Its relatively compact size, low vibration, and good efficiency make it a practical choice for residential systems, which is why scroll compressors have largely replaced reciprocating compressors in modern air-conditioning equipment.
 
-**Key manufacturer specifications (datasheet):**
+**Some manufacturer specifications! (datasheet):**
 
 | Parameter | Value |
 |---------|------|
@@ -47,9 +48,9 @@ Overall, the scroll compression mechanism used in the ZR34K3E-PFJ shows how mech
 
 ---
 
-## 3. Control Volume and System Diagram
+## 3. The Calculations :)
 
-The compressor is modeled as a **steady-flow control volume**.
+We can model the compressor as a steady-flow control volume.
 
 
 **Interactions:**
@@ -62,32 +63,26 @@ The compressor is modeled as a **steady-flow control volume**.
 - Negligible kinetic and potential energy changes  
 - Single inlet and single outlet  
 
----
-
-## 4. Mass Balance
-
 For a steady-flow control volume:
 
-\[
+$$
 \sum \dot{m}_{in} = \sum \dot{m}_{out}
-\]
+$$
 
-\[
+$$
 \dot{m}_{in} = \dot{m}_{out} = \dot{m}
-\]
+$$
 
-The datasheet does not list mass flow rate directly. It can be estimated using displacement and suction vapor density.
+The datasheet does not list mass flow rate directly. I have chosen to estimate this value using displacement and suction vapor density.
 
 Using:
 - Displacement: 8.03 m³/hr  
 - Volumetric efficiency (typical): 0.75  
 - R-407C suction vapor density (typical): 11 kg/m³  
 
-\[
+$$
 \dot{m} \approx \frac{8.03}{3600} \times 0.75 \times 11 \approx 0.018 \ \text{kg/s}
-\]
-
-This is a **derived value**, not directly provided by the manufacturer.
+$$
 
 ---
 
