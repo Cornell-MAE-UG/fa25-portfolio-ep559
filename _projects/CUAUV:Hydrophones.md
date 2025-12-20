@@ -1,8 +1,7 @@
 ---
 layout: project
-title: Hydrophones Enclosure
-description: Advanced CAD Project
-technologies: [SolidWorks, Machining]
+title: ENGRD 2210 Portfolio Assignment
+description: Thermodynamic Analysis of a Copeland ZR34K3E Scroll Compressor 
 image: /assets/images/Hydrophones.png
 ---
 
