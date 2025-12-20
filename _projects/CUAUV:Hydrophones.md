@@ -2,15 +2,11 @@
 layout: project
 title: ENGRD 2210 Portfolio Assignment
 description: Thermodynamic Analysis of a Copeland ZR34K3E Scroll Compressor 
-image: /assets/images/Hydrophones.png
+image: /assets/images/Compressor.jpg
 ---
 
 ## Thermodynamic Analysis of a Copeland ZR34K3E-PFJ Scroll Compressor
 
-**Course:** ENGRD 2210 – Thermodynamics  
-**Device Analyzed:** Copeland ZR34K3E-PFJ Hermetic Scroll Compressor  
-**Application:** Residential and Light-Commercial Air Conditioning  
-**Refrigerant:** R-407C  
 
 This portfolio entry analyzes a **specific commercial thermodynamic device** using **manufacturer performance data** and the **mass, energy, and entropy balance equations** developed in ENGRD 2210. The goal is to connect thermodynamic theory directly to real engineered hardware.
 
