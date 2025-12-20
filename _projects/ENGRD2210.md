@@ -23,8 +23,8 @@ The ZR34K3E-PFJ is designed to operate over the pressure ratios and temperature 
 
 Below are two images/schematics of the compressor:
 ---
-![Compressor schematic 1](/assets/images/Schematic.jpg)
-![Compressor schematic 2](/assets/images/Schematic2.jpg)
+![Compressor schematic 1](assets/images/Schematic.jpg)
+![Compressor schematic 2](assets/images/Schematic2.jpg)
 
 **Some manufacturer specifications! (datasheet):**
 
@@ -57,7 +57,7 @@ Overall, the scroll compression mechanism used in the ZR34K3E-PFJ shows how mech
 
 We can model the compressor as a steady-flow control volume.
 
-![CV diagram of compressor](/assets/images/ControlVolume.png)
+![CV diagram of compressor](assets/images/ControlVolume.png)
 
 **Interactions:**
 - **Mass flow:** Refrigerant vapor enters and exits
