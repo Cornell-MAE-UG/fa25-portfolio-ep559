@@ -8,14 +8,17 @@ image: /assets/images/Compressor.jpg
 ## Thermodynamic Analysis of a Copeland ZR34K3E-PFJ Scroll Compressor
 
 
-This portfolio entry analyzes a **specific commercial thermodynamic device** using **manufacturer performance data** and the **mass, energy, and entropy balance equations** developed in ENGRD 2210. The goal is to connect thermodynamic theory directly to real engineered hardware.
+This portfolio entry analyzes a specific commercial thermodynamic device using manufacturer performance data and the mass, energy, and entropy balance equations developed in ENGRD 2210 (Thermodynamics) this semester. The goal is to connect thermodynamic theory directly to real engineered hardware.
 
 ---
 
 ## 1. Device Overview
 
-The Copeland ZR34K3E-PFJ is a **hermetic scroll compressor** widely used in residential air-conditioning systems. Scroll compressors are favored over reciprocating compressors due to their smoother compression process, lower vibration, and improved efficiency.
+The Copeland ZR34K3E-PFJ is a hermetic scroll compressor commonly used in residential and light-commercial air-conditioning systems. In a hermetic design, the electric motor and compression mechanism are sealed inside a welded steel shell. This prevents refrigerant from leaking to the environment and eliminates the need for external shaft seals, which are a common failure point in open compressors. As a result, hermetic compressors tend to be more reliable and require less maintenance over their operating life.
 
+Scroll compressors like the ZR34K3E-PFJ have become the standard choice for residential HVAC systems because they are efficient, mechanically simple, and well-suited for continuous operation. In an air-conditioning system, the compressor largely determines how much electrical power is required to achieve a given cooling capacity, so its efficiency has a direct impact on overall system performance and operating cost. Reducing losses in the compressor improves the coefficient of performance (COP) of the entire system.
+
+The ZR34K3E-PFJ is designed to operate over the pressure ratios and temperature ranges typical of residential air-conditioning applications and is compatible with refrigerants such as R-407C. Its relatively compact size, low vibration, and good efficiency make it a practical choice for residential systems, which is why scroll compressors have largely replaced reciprocating compressors in modern air-conditioning equipment.
 
 **Key manufacturer specifications (datasheet):**
 
@@ -34,18 +37,13 @@ The Copeland ZR34K3E-PFJ is a **hermetic scroll compressor** widely used in resi
 
 ## 2. Qualitative Description of Operation
 
-A scroll compressor consists of two interleaved spiral scrolls:
-- One fixed scroll
-- One orbiting scroll
+A scroll compressor uses two interleaved spiral scrolls, one fixed and one orbiting, to compress refrigerant vapor. Low-pressure refrigerant enters the compressor near the outer edge of the scrolls. As the orbiting scroll moves in a circular path, it traps the refrigerant in crescent-shaped pockets between the two scrolls.
 
-As the orbiting scroll moves, refrigerant vapor is trapped in crescent-shaped pockets. These pockets gradually decrease in volume, compressing the vapor smoothly until it exits at high pressure near the center.
+As these pockets move inward toward the center of the compressor, their volume continuously decreases. This causes the pressure and temperature of the refrigerant to rise smoothly until it is discharged at high pressure through a central outlet. Because multiple pockets are compressing refrigerant at the same time, the process is nearly continuous rather than occurring in discrete steps.
 
+Compared to reciprocating compressors, this continuous compression leads to much lower pressure pulsations and reduced vibration. Scroll compressors also do not use suction or discharge valves, which reduces throttling losses and mechanical wear. From a thermodynamic perspective, the smoother compression process reduces irreversibilities during compression, leading to lower entropy generation and higher efficiency under typical operating conditions.
 
-Unlike piston compressors, this process:
-- Eliminates suction and discharge valves
-- Reduces pressure pulsations
-- Lowers entropy generation
-- Improves reliability and efficiency
+Overall, the scroll compression mechanism used in the ZR34K3E-PFJ shows how mechanical design choices directly affect thermodynamic performance, which is why this type of compressor is well-suited for residential air-conditioning systems that operate for long periods under varying outdoor conditions.
 
 ---
 
