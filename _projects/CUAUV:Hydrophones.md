@@ -8,12 +8,10 @@ image: /assets/images/Compressor.jpg
 ## Thermodynamic Analysis of a Copeland ZR34K3E-PFJ Scroll Compressor
 
 
-This portfolio entry analyzes a specific commercial thermodynamic device using manufacturer performance data and the mass, energy, and entropy balance equations developed in ENGRD 2210 (Thermodynamics) this semester. The goal is to connect thermodynamic theory directly to real engineered hardware.
+This portfolio entry analyzes a specific commercial thermodynamic device using manufacturer performance data and the mass, energy, and entropy balance equations developed in ENGRD 2210 (Thermodynamics) this semester. The goal is to connect thermodynamic theory directly to real engineered hardware. For this entry, I will analyze the Copeland ZR34K3E-PFJ compressor.
 
 ---
----
----
----
+
 
 ## 1. Device Overview
 
@@ -137,27 +135,35 @@ This matches the reported datasheet COP, validating the analysis.
 
 ---
 
-## 8. Effect of Operating Conditions
+## 4. Effect of Operating Conditions
 
 ### Increased Outdoor Ambient Temperature
 
-Higher ambient temperature raises condenser pressure, increasing the required pressure ratio across the compressor.
+When the outdoor temperature goes up, the compressor ends up having to work harder. Even though we are only looking at the compressor itself, it’s connected to the rest of the system, so its performance depends on the conditions downstream. For example, higher ambient temperature means the refrigerant leaving the compressor must reach a higher pressure to maintain the same cooling output. This increases the enthalpy rise across the compressor, which we can write as:
 
-**Thermodynamic consequences:**
-- Increased h_2 - h_1
-- Increased compressor work
-- Increased entropy generation
-- Reduced COP
+W_dot_in = m_dot * (h2 - h1) + Q_dot_loss
 
-If power increases to 3.0 kW while cooling capacity remains constant:
+The mass flow rate m_dot stays roughly the same, but because h2 - h1 is larger, the compressor needs more work input to move the same amount of refrigerant. This also increases entropy generation, S_dot_gen, since the process is less ideal at higher pressure ratios and larger temperature differences:
+
+S_dot_gen > 0
+
+From a system perspective, this reduces the coefficient of performance:
+
+COP = Q_dot_cooling / W_dot_in
+
+Using manufacturer data, under normal conditions:
+
+COP = 7.9 / 2.58 ≈ 3.05
+
+If the compressor power increases to 3.0 kW due to higher pressure while cooling output stays at 7.9 kW:
 
 COP = 7.9 / 3.0 ≈ 2.63
 
-This represents a **~14% efficiency reduction**, consistent with real air-conditioning behavior on hot days.
+This is about a 14% drop in efficiency. Even though the compressor itself hasn’t changed, higher ambient temperatures make it work harder, consume more power, and operate less efficiently. This shows how sensitive compressor performance is to operating conditions, and why it’s important to consider real-world environments when analyzing thermodynamic systems.
 
 ---
 
-## 9. Engineering Significance
+## 5. Engineering Significance
 
 This analysis demonstrates how:
 - Manufacturer datasheets encode thermodynamic behavior
@@ -169,7 +175,7 @@ This same framework applies broadly to HVAC, aerospace thermal systems, and ener
 
 ---
 
-## 10. Sources
+## 6. Sources
 
 - Copeland ZR34K3E-PFJ performance data:  
   https://copelandscrollcompressor.com/ZR34K3E-PFJ-details.php
