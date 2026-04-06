@@ -11,7 +11,7 @@ image: /assets/images/SLF_trap.jpg
   border-radius: 10px;
   padding: 1rem 1.25rem;
   margin: 1rem 0 2rem 0;
-  background: #fafafa;
+  background: black;
 }
 
 .toc-box ul {
