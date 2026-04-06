@@ -63,13 +63,13 @@ This project proposes and tests a mechanical spotted lanternfly (SLF) trap for v
   </p>
 
   <p>
-    <a href="{{ '/assets/Batties_ClientPitch.pdf' | relative_url }}" target="_blank" rel="noopener">
+    <a href="{{ '/assets/Client.pdf' | relative_url }}" target="_blank" rel="noopener">
       Open Client.pdf
     </a>
   </p>
 
   <iframe
-    src="{{ '/assets/Batties_ClientPitch.pdf' | relative_url }}"
+    src="{{ '/assets/Client.pdf' | relative_url }}"
     class="pdf-frame"
     loading="lazy">
   </iframe>
@@ -102,13 +102,13 @@ This project proposes and tests a mechanical spotted lanternfly (SLF) trap for v
   </p>
 
   <p>
-    <a href="{{ '/assets/ODP_5.pdf' | relative_url }}" target="_blank" rel="noopener">
-      Open Functional Prototype PDF
+    <a href="{{ '/assets/ODP5.pdf' | relative_url }}" target="_blank" rel="noopener">
+      Open ODP5.pdf
     </a>
   </p>
 
   <iframe
-    src="{{ '/assets/ODP_5.pdf' | relative_url }}"
+    src="{{ '/assets/ODP5.pdf' | relative_url }}"
     class="pdf-frame"
     loading="lazy">
   </iframe>
