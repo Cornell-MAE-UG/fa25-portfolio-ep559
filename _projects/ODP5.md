@@ -23,7 +23,7 @@ image: /assets/images/SLF_trap.jpg
   padding: 1.25rem;
   border: 1px solid #e5e5e5;
   border-radius: 12px;
-  background: white;
+  background: black;
 }
 
 .pdf-frame {
